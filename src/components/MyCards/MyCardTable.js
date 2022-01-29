@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
-const companies = [
+const test_companies = [
   {
     name: "Microsoft",
     ticker: "MSFT",
@@ -44,15 +44,15 @@ export default class MyCardTable extends React.Component {
   }
 
   addRow(company, color) {
-    const dcolor = company.perday >= 0 ? "green" : "red";
+    const dcolor = company.relChange >= 0 ? "green" : "red";
     return (
       <tr>
         <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4 text-left flex items-center">
-          <img
+          {/* <img
             src={require("assets/img/bootstrap.jpg").default}
             className="h-12 w-12 bg-white rounded-full border"
             alt="..."
-          ></img>{" "}
+          ></img>{" "} */}
           <span
             className={
               "ml-3 font-bold " +
@@ -69,23 +69,27 @@ export default class MyCardTable extends React.Component {
           ${company.price} USD
         </td>
         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
-          <span style={{ color: dcolor }}>{company.perday}%</span>
+        {company.absChange}
         </td>
         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
-          {company.peratio}
+          <span style={{ color: dcolor }}>{company.relChange}%</span>
+        </td>
+        
+        <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
+          {company.volume}
         </td>
         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
-          {company.revenue}
+          {company.avgVolume}
         </td>
         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
-          {company.profit}
+          {company.marketCap}
         </td>
         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
-          {(company.profit / company.revenue).toFixed(2)}
+          {company.peratio == 0 ? "" : company.peratio}
         </td>
-        <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4 text-right">
+        {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4 text-right">
           <TableDropdown />
-        </td>
+        </td> */}
       </tr>
     );
   }
@@ -102,6 +106,8 @@ export default class MyCardTable extends React.Component {
   render() {
     const color = this.props.color;
     const title = this.props.title ?? "Table";
+    const companies = this.props.items;
+
     return (
       <>
         <div
@@ -183,7 +189,47 @@ export default class MyCardTable extends React.Component {
                         : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                     }
                   >
-                    Per day
+                    Daily Change
+                  </th>
+                  <th
+                    className={
+                      "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+                      (color === "light"
+                        ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                        : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
+                    }
+                  >
+                    Daily % Change
+                  </th>
+                  <th
+                    className={
+                      "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+                      (color === "light"
+                        ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                        : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
+                    }
+                  >
+                    Volume
+                  </th>
+                  <th
+                    className={
+                      "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+                      (color === "light"
+                        ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                        : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
+                    }
+                  >
+                    Avg Volume (3 months)
+                  </th>
+                  <th
+                    className={
+                      "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+                      (color === "light"
+                        ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                        : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
+                    }
+                  >
+                    Market Cap.
                   </th>
                   <th
                     className={
@@ -194,36 +240,6 @@ export default class MyCardTable extends React.Component {
                     }
                   >
                     P/E Ratio
-                  </th>
-                  <th
-                    className={
-                      "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                      (color === "light"
-                        ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
-                        : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
-                    }
-                  >
-                    revenue
-                  </th>
-                  <th
-                    className={
-                      "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                      (color === "light"
-                        ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
-                        : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
-                    }
-                  >
-                    profit
-                  </th>
-                  <th
-                    className={
-                      "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                      (color === "light"
-                        ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
-                        : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
-                    }
-                  >
-                    Margin
                   </th>
                   <th
                     className={

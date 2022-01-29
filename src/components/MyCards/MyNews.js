@@ -11,7 +11,7 @@ export default class MyNews extends Component {
 
   componentDidMount() {
     fetch(
-      "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=b3e74e7542ad45ce868c83e6c52d06e8"
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b3e74e7542ad45ce868c83e6c52d06e8"
     )
       .then((response) => response.json())
       .then((object) => object.articles)
@@ -28,7 +28,6 @@ export default class MyNews extends Component {
   }
 
   render() {
-    console.log(this.state.news);
     const color = "light";
     return (
       <div className="shadow-lg rounded-lg br2 pa3 bg-white">

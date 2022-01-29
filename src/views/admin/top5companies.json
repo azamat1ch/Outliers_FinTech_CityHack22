@@ -1,0 +1,47 @@
+{
+  "AAPL": {
+    "industry": "Consumer Electronics",
+    "revenueGrowth": 0.112,
+    "currentPrice": 170.33,
+    "marketCap": 2782238343168,
+    "trailingPE": 28.317541,
+    "fiftyTwoWeekHigh": 182.94,
+    "fiftyTwoWeekLow": 116.21
+  },
+  "TSLA": {
+    "industry": "Auto Manufacturers",
+    "revenueGrowth": 0.649,
+    "currentPrice": 846.35,
+    "marketCap": 849955389440,
+    "trailingPE": 276.4043,
+    "fiftyTwoWeekHigh": 1243.49,
+    "fiftyTwoWeekLow": 539.49
+  },
+  "AMZN": {
+    "industry": "Internet Retail",
+    "revenueGrowth": 0.153,
+    "currentPrice": 2879.56,
+    "marketCap": 1460363067392,
+    "trailingPE": 56.352573,
+    "fiftyTwoWeekHigh": 3773.08,
+    "fiftyTwoWeekLow": 2707.04
+  },
+  "SBUX": {
+    "industry": "Restaurants",
+    "revenueGrowth": 0.313,
+    "currentPrice": 97.21,
+    "marketCap": 114046771200,
+    "trailingPE": 27.460451,
+    "fiftyTwoWeekHigh": 126.32,
+    "fiftyTwoWeekLow": 93.79
+  },
+  "NFLX": {
+    "industry": "Entertainment",
+    "revenueGrowth": 0.16,
+    "currentPrice": 384.36,
+    "marketCap": 170641620992,
+    "trailingPE": 34.19573,
+    "fiftyTwoWeekHigh": 700.99,
+    "fiftyTwoWeekLow": 351.46
+  }
+}
