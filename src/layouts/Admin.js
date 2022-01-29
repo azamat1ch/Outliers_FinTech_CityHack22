@@ -14,6 +14,7 @@ import Dashboard from "views/admin/Dashboard.js";
 import Maps from "views/admin/Maps.js";
 import Settings from "views/admin/Settings.js";
 import Tables from "views/admin/Tables.js";
+import CompanyPage from "views/admin/CompanyPage.js";
 
 class Admin extends React.Component {
   render() {
@@ -30,6 +31,7 @@ class Admin extends React.Component {
               <Route path="/admin/maps" exact component={Maps} />
               <Route path="/admin/settings" exact component={Settings} />
               <Route path="/admin/tables" exact component={Tables} />
+              <Route path="/admin/company_page" exact component={CompanyPage} />
               <Redirect from="/admin" to="/admin/dashboard" />
             </Switch>
             <FooterAdmin />
