@@ -100,7 +100,6 @@ export default class MyCardTable extends React.Component {
   }
 
   render() {
-    console.log('rendering');
     const color = this.props.color;
     const title = this.props.title ?? "Table";
     return (

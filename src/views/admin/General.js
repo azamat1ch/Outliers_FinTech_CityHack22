@@ -3,6 +3,7 @@ import React from "react";
 // components
 
 import MyCardTable from "components/MyCards/MyCardTable.js";
+import MyNews from "../../components/MyCards/MyNews";
 
 export default function General() {
   return (
@@ -12,7 +13,7 @@ export default function General() {
           <MyCardTable title="Companies"/>
         </div>
         <div className="w-full mb-12 px-4">
-          <MyCardTable color="dark" />
+          <MyNews />
         </div>
       </div>
     </>
