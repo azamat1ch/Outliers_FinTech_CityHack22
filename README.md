@@ -3,13 +3,13 @@
 
 <img src="https://user-images.githubusercontent.com/51944593/151665117-0d58be0c-e784-444e-b093-a4e299b1a6e8.png" width="200" alt="project_logo"/>
   
-## Team: < Outliers >
+## Team: Outliers 
 ## Members
-- < Alibi Melis> (Leader)
-- < Daniyar Agaltsov >
-- < Arman Zhumakan >
-- < Alnur Kabdolla >
-- < Azamat Yelmagambetov >
+-  Alibi Melis (Leader)
+-  Daniyar Agaltsov 
+-  Arman Zhumakan 
+-  Alnur Kabdolla 
+-  Azamat Yelmagambetov 
 
 ## Description of the Project (300 words)
 
