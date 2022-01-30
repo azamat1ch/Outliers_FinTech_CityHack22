@@ -32,9 +32,10 @@ export default function Landing() {
                     Begin your journey with us.
                   </h1>
                   <p className="mt-4 text-xl text-blueGray-200">
-                    Sustainability-Focused Investment Data Aggregator (we prefer SFIDA) is the ultimate
-                    tool to collect useful data and make information accessible. With us investing becomes
-                    easy as pie.
+                    Sustainability-Focused Investment Data Aggregator (we prefer
+                    SFIDA) is the ultimate tool to collect useful data and make
+                    information accessible. With us investing becomes easy as
+                    pie.
                   </p>
                 </div>
               </div>
@@ -68,12 +69,12 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                      <i className="fas fa-award"></i>
+                      <i className="fas fa-gifts"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Awarded Agency</h6>
+                    <h6 className="text-xl font-semibold">Our Product</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Divide details about your product or agency work into
-                      parts. A paragraph describing a feature will be enough.
+                      Our product is Sustainability-Focused Investment Data
+                      Aggregator
                     </p>
                   </div>
                 </div>
@@ -83,12 +84,12 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
-                      <i className="fas fa-retweet"></i>
+                      <i className="fas fa-question"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Free Revisions</h6>
+                    <h6 className="text-xl font-semibold">Problem</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Keep you user engaged by providing meaningful information.
-                      Remember that by this time, the user is curious.
+                      We are tackling the problem of ESG Data Scarcity by
+                      aggregating all of the data in one platform
                     </p>
                   </div>
                 </div>
@@ -98,12 +99,12 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      <i className="fas fa-fingerprint"></i>
+                      <i className="fas fa-user"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Verified Company</h6>
+                    <h6 className="text-xl font-semibold">Target Customers</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Write a few lines about each one. A paragraph describing a
-                      feature will be enough. Keep you user engaged!
+                      Professional investors, financial institutions and
+                      analysts
                     </p>
                   </div>
                 </div>
