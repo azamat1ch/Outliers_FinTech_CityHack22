@@ -27,7 +27,7 @@ const PagesDropdown = () => {
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
       >
-        Demo Pages
+        Pages
       </a>
       <div
         ref={popoverDropdownRef}
@@ -52,28 +52,28 @@ const PagesDropdown = () => {
           Dashboard
         </Link>
         <Link
-          to="/admin/settings"
+          to="/admin/upload"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Settings
+          Upload
         </Link>
         <Link
-          to="/admin/tables"
+          to="/admin/Charity"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Tables
+          Charity
         </Link>
         <Link
-          to="/admin/maps"
+          to="/admin/inbox"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Maps
+          Inbox
         </Link>
         <div className="h-0 mx-4 my-2 border border-solid border-blueGray-100" />
         <span

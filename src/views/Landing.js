@@ -130,7 +130,7 @@ export default function Landing() {
                   JavaScript.
                 </p>
                 <Link to="/" className="font-bold text-blueGray-700 mt-8">
-                  Check Notus React!
+                  Check SFIDA!
                 </Link>
               </div>
 
