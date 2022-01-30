@@ -16,7 +16,7 @@ export default function Landing() {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+                "url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')",
             }}
           >
             <span
@@ -29,12 +29,12 @@ export default function Landing() {
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
                   <h1 className="text-white font-semibold text-5xl">
-                    Your story starts with us.
+                    Begin your journey with us.
                   </h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
-                    This is a simple example of a Landing Page you can build
-                    using Notus React. It features multiple CSS components based
-                    on the Tailwind CSS design system.
+                  <p className="mt-4 text-xl text-blueGray-200">
+                    Sustainability-Focused Investment Data Aggregator (we prefer SFIDA) is the ultimate
+                    tool to collect useful data and make information accessible. With us investing becomes
+                    easy as pie.
                   </p>
                 </div>
               </div>
@@ -272,17 +272,19 @@ export default function Landing() {
               </div>
             </div>
             <div className="flex flex-wrap">
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div className="w-full md:w-6/12 lg:w-1/5 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-1-800x800.jpg").default}
+                    src={
+                      "https://media-exp1.licdn.com/dms/image/C4D03AQG8vzB7XD-N9w/profile-displayphoto-shrink_200_200/0/1595400928923?e=1648684800&v=beta&t=0NuEhwdKInypyS1Oj5rx2SRX2h7GR6CO5Qsc-UPfC_g"
+                    }
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Ryan Tompson</h5>
+                    <h5 className="text-xl font-bold">Alnur Kabdolla</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Web Developer
+                      Front-end Developer
                     </p>
                     <div className="mt-6">
                       <button
@@ -307,17 +309,19 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div className="w-full md:w-6/12 lg:w-1/5 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-2-800x800.jpg").default}
+                    src={
+                      "https://media-exp1.licdn.com/dms/image/C5103AQERmWbpV87IFg/profile-displayphoto-shrink_200_200/0/1572312248725?e=1648684800&v=beta&t=4v_w0v436e_h18OZPIvqvTLFUn99bWszTsbXfsfItGA"
+                    }
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Romina Hadid</h5>
+                    <h5 className="text-xl font-bold">Arman Zhumakhan</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Marketing Specialist
+                      Back-end Developer
                     </p>
                     <div className="mt-6">
                       <button
@@ -336,17 +340,19 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div className="w-full md:w-6/12 lg:w-1/5 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-3-800x800.jpg").default}
+                    src={
+                      "https://media-exp1.licdn.com/dms/image/C5603AQHFrazdH7Lb-A/profile-displayphoto-shrink_200_200/0/1613043720970?e=1648684800&v=beta&t=48Jj2BojTJljYbw4jseEKNrAaYlGsgGKrR_jEjE8bIM"
+                    }
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alexa Smith</h5>
+                    <h5 className="text-xl font-bold">Alibi Melis</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      UI/UX Designer
+                      Front-end Developer
                     </p>
                     <div className="mt-6">
                       <button
@@ -371,17 +377,54 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div className="w-full md:w-6/12 lg:w-1/5 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-4-470x470.png").default}
+                    src={require("assets/img/team-1-800x800.jpg").default}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Jenna Kardi</h5>
+                    <h5 className="text-xl font-bold">Azamat Yelmagambetov</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Founder and CEO
+                      Back-end Developer
+                    </p>
+                    <div className="mt-6">
+                      <button
+                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-google"></i>
+                      </button>
+                      <button
+                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-twitter"></i>
+                      </button>
+                      <button
+                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-instagram"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-6/12 lg:w-1/5 lg:mb-0 mb-12 px-4">
+                <div className="px-6">
+                  <img
+                    alt="..."
+                    src={
+                      "https://media-exp1.licdn.com/dms/image/C4D03AQHQWxxk8YKkXg/profile-displayphoto-shrink_200_200/0/1627466504251?e=1648684800&v=beta&t=06peIjV6MOdrpam0kJ4587lfDpWJR0rmCHJkZlLvI68"
+                    }
+                    className="shadow-lg rounded-full mx-auto max-w-120-px"
+                  />
+                  <div className="pt-6 text-center">
+                    <h5 className="text-xl font-bold">Daniyar Agaltsov</h5>
+                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
+                      Back-end Developer
                     </p>
                     <div className="mt-6">
                       <button

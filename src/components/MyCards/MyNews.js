@@ -30,8 +30,12 @@ export default class MyNews extends Component {
   render() {
     const color = "light";
     return (
-      <div className="shadow-lg rounded-lg br2 pa3 bg-white">
-        <div className="rounded-t mb-0 px-4 py-3 border-0">
+      <div
+        className={
+          "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded "
+        }
+      >
+        <div className="rounded-t mb-0 px-4 py-3 border-0 bg-white">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full px-4 max-w-full flex-grow flex-1">
               <h3
@@ -45,8 +49,8 @@ export default class MyNews extends Component {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap">
-          {this.generateNews()}
+        <div className="block w-full overflow-x-auto bg-transparent">
+          <div className="flex flex-wrap">{this.generateNews()}</div>
         </div>
       </div>
     );

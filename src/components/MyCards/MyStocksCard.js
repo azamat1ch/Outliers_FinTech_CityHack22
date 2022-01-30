@@ -1,36 +1,22 @@
 import React from "react";
 import Chart from "chart.js";
 
-export default function CardLineChart() {
+export default function MyStocksCard(props) {
+  const prices = props.prices;
   React.useEffect(() => {
     var config = {
       type: "line",
       data: {
-        labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-        ],
+        labels: prices.map(price => price.index.slice(0, 7)),
         datasets: [
           {
-            label: new Date().getFullYear(),
+            label: 'Stock Price',
             backgroundColor: "#4c51bf",
             borderColor: "#4c51bf",
-            data: [5, 78, 66, 44, 56, 67, 75],
+            data: prices.map(price => price.close),
             fill: false,
           },
-          {
-            label: new Date().getFullYear() - 1,
-            fill: false,
-            backgroundColor: "#fff",
-            borderColor: "#fff",
-            data: [40, 68, 86, 74, 56, 60, 87],
-          },
-        ],
+        ], 
       },
       options: {
         maintainAspectRatio: false,
@@ -115,7 +101,7 @@ export default function CardLineChart() {
               <h6 className="uppercase text-blueGray-100 mb-1 text-xs font-semibold">
                 Overview
               </h6>
-              <h2 className="text-white text-xl font-semibold">Sales value</h2>
+              <h2 className="text-white text-xl font-semibold">Apple Inc. Stock Price</h2>
             </div>
           </div>
         </div>
