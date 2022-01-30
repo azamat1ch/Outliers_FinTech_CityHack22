@@ -15,7 +15,7 @@ import hkflag from "../../assets/img/hong-kong.png";
 
 import companies from "./top5companies.json";
 
-export default class General extends React.Component {
+export default class MyDashboard extends React.Component {
   constructor() {
     super();
     this.state = {

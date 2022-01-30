@@ -39,13 +39,9 @@ export default class MyCardSettings extends React.Component {
       body: formData,
     })
       .then((response) => response.json())
-      .then((result) => {
-        console.log("Success:", result);
-        // event.preventDefault();
-        // this.props.history.push('/CompanyPage')
-      })
+      .then(console.log)
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Arman Error:", error);
         // event.preventDefault();
         // this.props.history.push('/CompanyPage')
       });
@@ -199,7 +195,7 @@ export default class MyCardSettings extends React.Component {
                         <p>
                           lastModifiedDate:{" "}
                           {/* {console.log(Date.parse(this.state.selectedFile.lastModified))} */}
-                          {this.state.selectedFile.lastModifiedDate.toLocaleDateString()}
+                          {this.state.selectedFile.lastModifiedDate.toLocaleDateString() ?? '' }
                         </p>
                       </div>
                     ) : (
