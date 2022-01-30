@@ -242,11 +242,11 @@ export default class MyCardSettings extends React.Component {
                     </th>
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
                       <div className="flex items-center">
-                        <span className="mr-2">80</span>
+                        <span className="mr-2">69</span>
                         <div className="relative w-full">
                           <div className="overflow-hidden h-2 text-m flex rounded bg-red-200">
                             <div
-                              style={{ width: "80%" }}
+                              style={{ width: "69%" }}
                               className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
                             ></div>
                           </div>
@@ -260,11 +260,11 @@ export default class MyCardSettings extends React.Component {
                     </th>
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
                       <div className="flex items-center">
-                        <span className="mr-2">80</span>
+                        <span className="mr-2">75</span>
                         <div className="relative w-full">
                           <div className="overflow-hidden h-2 text-m flex rounded bg-purple-200">
                             <div
-                              style={{ width: "80%" }}
+                              style={{ width: "75%" }}
                               className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"
                             ></div>
                           </div>
@@ -278,11 +278,11 @@ export default class MyCardSettings extends React.Component {
                     </th>
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
                       <div className="flex items-center">
-                        <span className="mr-2">70</span>
+                        <span className="mr-2">82</span>
                         <div className="relative w-full">
                           <div className="overflow-hidden h-2 text-m flex rounded bg-emerald-200">
                             <div
-                              style={{ width: "70%" }}
+                              style={{ width: "82%" }}
                               className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
                             ></div>
                           </div>
