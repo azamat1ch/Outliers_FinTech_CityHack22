@@ -11,9 +11,7 @@
 -  Alnur Kabdolla 
 -  Azamat Yelmagambetov 
 
-## Description of the Project (300 words)
-
-## 3 Most Impactful Features of the Project (with Screenshot and Short Description (150 words))
+## 3 Most Impactful Features of the Project
 1. Company's ESG Score calculation & Promotion
 2. Financial Data Aggregation
 3. Relevant News Collection
