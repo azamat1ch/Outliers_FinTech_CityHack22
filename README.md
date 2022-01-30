@@ -28,8 +28,8 @@
 4. NewsAPI for Relevant News retrieval
 5. YahooFinanceAPI for Relevant Financial Information retrieval
 
-## Link
-- < 3 minute Youtube Video Link for Project Demo >
+## Demo
+- <a href="https://drive.google.com/file/d/1TIDCxa4rcYi0UfeKysoTRMxipT0yHFqJ/view?usp=sharing">Click here to watch the demo</a>
 
 ## Usage
 Clone the project to your local machine
