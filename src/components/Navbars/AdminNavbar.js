@@ -4,7 +4,8 @@ import UserDropdown from "components/Dropdowns/UserDropdown.js";
 
 export default function Navbar() {
 
-  let pageName = window?.location?.href?.split('/').at(-1) ?? "";
+  let url = window?.location?.href?.split('/');
+  let pageName = url[url.length - 1];
   if (pageName === 'company_page') pageName = "Company Overview"
 
   return (
