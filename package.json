@@ -1,10 +1,9 @@
 {
-  "name": "notus-react",
-  "version": "1.1.0",
-  "description": "Notus React - A free Tailwind CSS and React UI Kit and Admin by Creative Tim.",
-  "repository": "https://github.com/creativetimofficial/notus-react",
-  "license": "MIT",
+  "name": "sfida",
+  "version": "1.0.0",
+  "description": "Website created for CityHack22 by Outliers team using Creative Tim template.",
   "private": true,
+  "homepage": "https://alibimelis.github.io/Outliers_FinTech_CityHack22",
   "proxy": "http://127.0.0.1:5000/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
@@ -34,6 +33,8 @@
     "test": "react-scripts test",
     "start-backend": "cd backend && env/bin/flask run --no-debugger",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
     "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
   },
@@ -54,5 +55,8 @@
   },
   "optionalDependencies": {
     "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
