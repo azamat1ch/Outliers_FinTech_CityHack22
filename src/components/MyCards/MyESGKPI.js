@@ -5,7 +5,6 @@ export default class MyESGKPI extends Component {
   render() {
     const title = this.props.title;
     const value = this.props.value;
-    const date = this.props.date;
     const apple_esg = this.props.esg;
 
     return (

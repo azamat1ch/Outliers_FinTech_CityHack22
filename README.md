@@ -25,6 +25,7 @@
   - yahoo-fin
 4. NewsAPI for Relevant News retrieval
 5. YahooFinanceAPI for Relevant Financial Information retrieval
+6. Website was created using <a href="https://creative-tim.com/" target="_blank">Creative Tim</a> template
 
 ## Demo
 - <a href="https://drive.google.com/file/d/1TIDCxa4rcYi0UfeKysoTRMxipT0yHFqJ/view?usp=sharing">Click here to watch the demo</a>

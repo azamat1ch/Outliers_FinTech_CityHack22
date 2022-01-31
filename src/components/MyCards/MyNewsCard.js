@@ -8,7 +8,7 @@ export default class MyNewsCard extends Component {
         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-4 border-solid border-2 rounded-lg">
           <div className="px-4 py-5 flex-auto h-full">
             <div className="mb-5">
-              <img src={news.urlToImage} />
+              <img src={news.urlToImage} alt="News" />
             </div>
             <h6 className="text-xl font-semibold">
               {news.title}

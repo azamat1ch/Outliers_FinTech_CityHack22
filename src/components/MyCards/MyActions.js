@@ -6,7 +6,7 @@ export default class MyActions extends Component {
     let actions = [];
     // const limit = Math.min(6, this.state.news.length);
     for (let i = 0; i < steps.length; i++) {
-      actions.push(<MyActionCard step={steps[i]} image={images[i]}/>);
+      actions.push(<MyActionCard step={steps[i]} image={images[i]} key={i}/>);
     }
     return actions;
   }

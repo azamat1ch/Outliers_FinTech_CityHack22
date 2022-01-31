@@ -1,10 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 
 // components
-
-import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
 export default function MyCharityCardTable({ color }) {
   return (
@@ -39,7 +36,7 @@ export default function MyCharityCardTable({ color }) {
             <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div className="mb-5">
-                    <img src={require("assets/img/charity-logo.jpeg").default} style={{
+                    <img src={require("assets/img/charity-logo.jpeg").default} alt="logo " style={{
                       minHeight: 50,
                       maxHeight: 60,
                       alignSelf: 'center'
@@ -65,9 +62,9 @@ export default function MyCharityCardTable({ color }) {
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-lightBlue-500">
                   <img
-                    alt="..."
                     src={require("assets/img/charity.jpeg").default}
                     className="w-full align-middle rounded-t-lg"
+                    alt="Thumbnail"
                   />
                   <blockquote className="relative p-8 mb-4">
                     <svg
@@ -96,7 +93,7 @@ export default function MyCharityCardTable({ color }) {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="mb-5">
-                    <img src={require("assets/img/charity1.png").default} style={{
+                    <img src={require("assets/img/charity1.png").default} alt="Program 1" style={{
                       maxHeight: 150,
                       alignSelf: 'center'
                     }}/>
@@ -113,7 +110,7 @@ export default function MyCharityCardTable({ color }) {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 min-h-10 flex-auto">
                   <div className="mb-5">
-                    <img src={require("assets/img/charity2.png").default} style={{
+                    <img src={require("assets/img/charity2.png").default} alt="Program 2" style={{
                       maxHeight: 150,
                       alignSelf: 'center'
                     }}
@@ -130,7 +127,7 @@ export default function MyCharityCardTable({ color }) {
               <div className="lg:pt-12 pt-6 w-full md:w-4/12  px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                  <img src={require("assets/img/charity3.jpeg").default} style={{
+                  <img src={require("assets/img/charity3.jpeg").default} alt="Program 3" style={{
                       maxHeight: 150,
                       minHeight: 150,
                       alignSelf: 'center'
@@ -147,7 +144,7 @@ export default function MyCharityCardTable({ color }) {
             <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                  <img src={require("assets/img/charity4.png").default} style={{
+                  <img src={require("assets/img/charity4.png").default} alt="Program 4" style={{
                       maxHeight: 150,
                       alignSelf: 'center'
                     }}
@@ -162,7 +159,7 @@ export default function MyCharityCardTable({ color }) {
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 min-h-10 flex-auto">
-                  <img src={require("assets/img/charity5.png").default} style={{
+                  <img src={require("assets/img/charity5.png").default} alt="Program 5" style={{
                       maxHeight: 150,
                       minHeight: 150,
                       alignSelf: 'center'
@@ -178,7 +175,7 @@ export default function MyCharityCardTable({ color }) {
               <div className="lg:pt-12 pt-6 w-full md:w-4/12  px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                  <img src={require("assets/img/charity6.png").default} style={{
+                  <img src={require("assets/img/charity6.png").default} alt="Program 6" style={{
                       maxHeight: 150,
                       alignSelf: 'center'
                     }}

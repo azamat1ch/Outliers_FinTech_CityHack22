@@ -22,7 +22,7 @@ export default class MyNews extends Component {
     let news = [];
     const limit = Math.min(6, this.state.news.length);
     for (let i = 0; i < limit; i++) {
-      news.push(<MyNewsCard news={this.state.news[i]} />);
+      news.push(<MyNewsCard news={this.state.news[i]} key={i} />);
     }
     return news;
   }

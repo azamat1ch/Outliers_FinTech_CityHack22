@@ -39,9 +39,8 @@ export default class MyCardSettings extends React.Component {
       body: formData,
     })
       .then((response) => response.json())
-      .then(console.log)
       .catch((error) => {
-        console.error("Arman Error:", error);
+        console.error("Error:", error);
         // event.preventDefault();
         // this.props.history.push('/CompanyPage')
       });
@@ -50,16 +49,13 @@ export default class MyCardSettings extends React.Component {
       function () {
         //Start the timer
         this.setState({ isSubmitted: true, loading: false });
-        console.log("3sec passed");
       }.bind(this),
       3000
     );
 
-    console.log(this.state.isSubmitted);
   }
 
   changeHandler = (event) => {
-    console.log(event);
     this.setState({
       selectedFile: event.target.files[0],
       isFilePicked: true,
@@ -67,7 +63,6 @@ export default class MyCardSettings extends React.Component {
   };
 
   render() {
-    console.log(this.state.isFilePicked);
 
     return (
       <>
@@ -80,7 +75,7 @@ export default class MyCardSettings extends React.Component {
             </div>
           </div>
           <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-            <form onSubmit>
+            <form>
               <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
                 Report Information
               </h6>
@@ -242,11 +237,11 @@ export default class MyCardSettings extends React.Component {
                     </th>
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
                       <div className="flex items-center">
-                        <span className="mr-2">80</span>
+                        <span className="mr-2">69</span>
                         <div className="relative w-full">
                           <div className="overflow-hidden h-2 text-m flex rounded bg-red-200">
                             <div
-                              style={{ width: "80%" }}
+                              style={{ width: "69%" }}
                               className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
                             ></div>
                           </div>
@@ -260,11 +255,11 @@ export default class MyCardSettings extends React.Component {
                     </th>
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
                       <div className="flex items-center">
-                        <span className="mr-2">80</span>
+                        <span className="mr-2">75</span>
                         <div className="relative w-full">
                           <div className="overflow-hidden h-2 text-m flex rounded bg-purple-200">
                             <div
-                              style={{ width: "80%" }}
+                              style={{ width: "75%" }}
                               className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"
                             ></div>
                           </div>
@@ -278,11 +273,11 @@ export default class MyCardSettings extends React.Component {
                     </th>
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
                       <div className="flex items-center">
-                        <span className="mr-2">70</span>
+                        <span className="mr-2">82</span>
                         <div className="relative w-full">
                           <div className="overflow-hidden h-2 text-m flex rounded bg-emerald-200">
                             <div
-                              style={{ width: "70%" }}
+                              style={{ width: "82%" }}
                               className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
                             ></div>
                           </div>
