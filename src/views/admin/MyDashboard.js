@@ -13,8 +13,6 @@ import jpnflag from "../../assets/img/japan.png";
 import gbtflag from "../../assets/img/united-kingdom.png";
 import hkflag from "../../assets/img/hong-kong.png";
 
-import companies from "./top5companies.json";
-
 export default class MyDashboard extends React.Component {
   constructor() {
     super();
@@ -30,6 +28,8 @@ export default class MyDashboard extends React.Component {
       .then((data) => data.companies)
       .then((companies) => {
         this.setState({ companies: companies });
+      }).catch((e) => {
+        console.log(e);
       });
   }
 
@@ -99,7 +99,11 @@ export default class MyDashboard extends React.Component {
         <div className="flex flex-wrap mt-4">
           <div className="w-full lg:w-6/12 xl:w-4/12 p-4">
             <div
-              className={(this.state.topCount == 10 ? "bg-light-purple white " : "bg-white grow ") + "shadow-lg text-center rounded p-4"}
+              className={
+                (this.state.topCount === 10
+                  ? "bg-light-purple white "
+                  : "bg-white grow ") + "shadow-lg text-center rounded p-4"
+              }
               onClick={() => {
                 this.setState({ topCount: 10 });
                 this.fetchData();
@@ -110,7 +114,11 @@ export default class MyDashboard extends React.Component {
           </div>
           <div className="w-full lg:w-6/12 xl:w-4/12 p-4">
             <div
-              className={(this.state.topCount == 30 ? "bg-light-purple white " : "bg-white grow ") + "shadow-lg text-center rounded p-4"}
+              className={
+                (this.state.topCount === 30
+                  ? "bg-light-purple white "
+                  : "bg-white grow ") + "shadow-lg text-center rounded p-4"
+              }
               onClick={() => {
                 this.setState({ topCount: 30 });
                 this.fetchData();
@@ -121,7 +129,11 @@ export default class MyDashboard extends React.Component {
           </div>
           <div className="w-full lg:w-6/12 xl:w-4/12 p-4">
             <div
-              className={(this.state.topCount == 50 ? "bg-light-purple white " : "bg-white grow ") + "shadow-lg text-center rounded p-4"}
+              className={
+                (this.state.topCount === 50
+                  ? "bg-light-purple white "
+                  : "bg-white grow ") + "shadow-lg text-center rounded p-4"
+              }
               onClick={() => {
                 this.setState({ topCount: 50 });
                 this.fetchData();

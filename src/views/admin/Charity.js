@@ -4,7 +4,7 @@ import React from "react";
 
 import MyCharityCardTable from "components/MyCards/MyCharityCardTable.js";
 
-export default function Tables() {
+export default function charity() {
   return (
     <>
       <div className="flex flex-wrap mt-4">

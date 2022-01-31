@@ -11,9 +11,7 @@
 -  Alnur Kabdolla 
 -  Azamat Yelmagambetov 
 
-## Description of the Project (300 words)
-
-## 3 Most Impactful Features of the Project (with Screenshot and Short Description (150 words))
+## 3 Most Impactful Features of the Project
 1. Company's ESG Score calculation & Promotion
 2. Financial Data Aggregation
 3. Relevant News Collection
@@ -27,9 +25,10 @@
   - yahoo-fin
 4. NewsAPI for Relevant News retrieval
 5. YahooFinanceAPI for Relevant Financial Information retrieval
+6. Website was created using <a href="https://creative-tim.com/" target="_blank">Creative Tim</a> template
 
-## Link
-- < 3 minute Youtube Video Link for Project Demo >
+## Demo
+- <a href="https://drive.google.com/file/d/1TIDCxa4rcYi0UfeKysoTRMxipT0yHFqJ/view?usp=sharing">Click here to watch the demo</a>
 
 ## Usage
 Clone the project to your local machine

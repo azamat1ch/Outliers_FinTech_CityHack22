@@ -2,8 +2,8 @@ import React from "react";
 import Chart from "chart.js";
 
 export default function MyStocksCard(props) {
-  const prices = props.prices;
   React.useEffect(() => {
+    const prices = props.prices;
     var config = {
       type: "line",
       data: {

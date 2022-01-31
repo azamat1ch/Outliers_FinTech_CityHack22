@@ -4,21 +4,13 @@ import axios from "axios";
 
 // components
 
-import CardLineChart from "components/Cards/CardLineChart.js";
-import CardBarChart from "components/Cards/CardBarChart.js";
-import CardPageVisits from "components/Cards/CardPageVisits.js";
-import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
-
 import { Oval } from "react-loader-spinner";
 import MyCardProfile from "components/MyCards/MyCardProfile.js";
 import MyKPICard from "../../components/MyCards/MyKPICard";
 import MyESGCard from "components/MyCards/MyESGCard";
 import "react-circular-progressbar/dist/styles.css";
-
-import Chart from "chart.js";
 import MyESGKPI from "components/MyCards/MyESGKPI";
 import MyActions from "components/MyCards/MyActions";
-import { render } from "react-dom";
 import MyStocksCard from "components/MyCards/MyStocksCard";
 import MyBarChart from "components/MyCards/MyBarChart";
 
@@ -39,6 +31,37 @@ const apple_esg = {
   G: 82,
   ESG: 76,
 };
+
+const test_stocks = [
+  {
+    index: '2021-07',
+    close: 100,
+  },
+  {
+    index: '2021-08',
+    close: 110,
+  },
+  {
+    index: '2021-09',
+    close: 130,
+  },
+];
+
+const test_quarterly = [
+  {
+    incomeBeforeTax: 1000000,
+    netIncome: 990000,
+  },
+  {
+    incomeBeforeTax: 1000000,
+    netIncome: 950000,
+  },
+  {
+    incomeBeforeTax: 1000000,
+    netIncome: 920000,
+  }
+];
+
 export default class CompanyPage extends React.Component {
   constructor() {
     super();
@@ -52,10 +75,15 @@ export default class CompanyPage extends React.Component {
     axios({ method: "GET", url: `/companyPage/AAPL` })
       .then((res) => res.data)
       .then((data) => {
-        console.log(data);
         this.setState({
           stocks: data.price.slice(-36),
           quarterly: data.quarterly,
+        });
+      }).catch(e => {
+        console.log(e);
+        this.setState({
+          quarterly: test_quarterly,
+          stocks: test_stocks,
         });
       });
   }
@@ -65,7 +93,6 @@ export default class CompanyPage extends React.Component {
   }
 
   render() {
-    console.log(this.state.stocks);
     return (
       <StickyContainer>
         <div className="flex flex-wrap">

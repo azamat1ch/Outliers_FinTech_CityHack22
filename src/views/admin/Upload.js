@@ -3,7 +3,6 @@ import React from "react";
 // components
 
 import MyCardSettings from "components/MyCards/MyCardSettings.js";
-import CardProfile from "components/Cards/CardProfile.js";
 
 export default function Upload() {
   return (
