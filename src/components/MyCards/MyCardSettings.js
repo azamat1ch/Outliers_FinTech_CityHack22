@@ -1,6 +1,7 @@
 import React from "react";
-import { Oval } from  'react-loader-spinner'
+import { Oval } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { isChrome, isSafari } from "react-device-detect";
 
 export default class MyCardSettings extends React.Component {
   constructor() {
@@ -26,7 +27,7 @@ export default class MyCardSettings extends React.Component {
   }
 
   handleSubmit(event) {
-    this.setState({loading: true})
+    this.setState({ loading: true });
     const formData = new FormData();
     formData.append("File", this.state.selectedFile);
     formData.append("reportName", this.state.reportName);
@@ -52,7 +53,6 @@ export default class MyCardSettings extends React.Component {
       }.bind(this),
       3000
     );
-
   }
 
   changeHandler = (event) => {
@@ -189,8 +189,7 @@ export default class MyCardSettings extends React.Component {
                         <p>Size in bytes: {this.state.selectedFile.size}</p>
                         <p>
                           lastModifiedDate:{" "}
-                          {/* {console.log(Date.parse(this.state.selectedFile.lastModified))} */}
-                          {this.state.selectedFile.lastModifiedDate.toLocaleDateString() ?? '' }
+                          {isChrome ? this.state.selectedFile.lastModifiedDate.toLocaleDateString() : (isSafari ? Date(this.state.selectedFile.lastModified) : "")}
                         </p>
                       </div>
                     ) : (
