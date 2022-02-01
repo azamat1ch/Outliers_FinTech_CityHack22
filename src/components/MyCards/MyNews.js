@@ -6,12 +6,13 @@ export default class MyNews extends Component {
     super();
     this.state = {
       news: [],
+      apiKey: "",
     };
   }
 
   componentDidMount() {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b3e74e7542ad45ce868c83e6c52d06e8"
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" + this.state.apiKey
     )
       .then((response) => response.json())
       .then((object) => object.articles)
