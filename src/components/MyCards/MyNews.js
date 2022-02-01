@@ -6,17 +6,20 @@ export default class MyNews extends Component {
     super();
     this.state = {
       news: [],
-      apiKey: "",
     };
   }
 
   componentDidMount() {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" + this.state.apiKey
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" +
+        process.env.REACT_APP_NEWS_API_KEY
     )
       .then((response) => response.json())
       .then((object) => object.articles)
-      .then((fetchednews) => this.setState({ news: fetchednews }));
+      .then((fetchednews) => {
+        if (fetchednews) this.setState({ news: fetchednews });
+      })
+      .catch(console.log);
   }
 
   generateNews() {
